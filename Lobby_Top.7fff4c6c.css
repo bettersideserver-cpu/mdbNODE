@@ -1,0 +1,61 @@
+.wa-fab {
+  right: calc(env(safe-area-inset-right, 0px)  + 20px);
+  bottom: calc(env(safe-area-inset-bottom, 0px)  + 20px);
+  z-index: 13000;
+  cursor: pointer;
+  background: #25d366;
+  border: none;
+  border-radius: 50%;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  transition: transform .12s, box-shadow .12s;
+  display: grid;
+  position: fixed;
+  box-shadow: 0 6px 18px #00000040;
+}
+
+.wa-fab:active {
+  transform: scale(.96);
+}
+
+.wa-fab .wa-icon, .wa-fab svg, .wa-fab img.wa-icon-img {
+  pointer-events: none;
+  width: 34px;
+  height: 34px;
+  display: block;
+}
+
+@media (width <= 600px) {
+  .wa-fab {
+    width: 52px;
+    height: 52px;
+    right: calc(env(safe-area-inset-right, 0px)  + 10px);
+    bottom: calc(env(safe-area-inset-bottom, 0px)  + 70px);
+  }
+
+  .wa-fab .wa-icon, .wa-fab svg, .wa-fab img.wa-icon-img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.wa-label {
+  right: calc(env(safe-area-inset-right, 0px)  + 92px);
+  bottom: calc(env(safe-area-inset-bottom, 0px)  + 28px);
+  z-index: 12999;
+  color: #fff;
+  pointer-events: none;
+  background: #000000b3;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  display: none;
+  position: fixed;
+}
+
+.wa-label.show {
+  display: block;
+}
+/*# sourceMappingURL=Lobby_Top.7fff4c6c.css.map */
